@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Venue | Cilla's Conference Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Cilla's</h2>
+        </div>
+        <nav class="navbar">
+            <div class="nav-container">
+
+                <button class="nav-toggle" id="navToggle" aria-label="togglenavigation">
+                    <i class="fa-solid fa-bars"></i>
+                    Menu
+                </button>
+
+                <button class="nav-toggle" aria-label="toggle navigation" id="navToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services & Venue</a></li>
+                    <li><a href="Lindysplace1.html">Accommodation</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact us.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <div class="booking-container">
+
+            <div class="booking-info-sidebar">
+                <h2>Let's Plan Your Next Event</h2>
+                <p>Fill out our reservation inquiry form, and a dedicated member of our event management team will reach
+                    out to you within 24 hours with a tailored quotation.</p>
+
+                <div class="contact-quick-details">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>2nd Floor, Mimosa House, 9th Avenue & JMN Nkomo Street, Bulawayo, Zimbabwe</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <p>cillasconferencecentre2022@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🏆</span>
+                        <p>Award-Winning Hospitality</p>
+                    </div>
+                </div>
+
+                <div class="booking-note">
+                    <p><strong>Please Note:</strong> Submitting this form acts as an availability inquiry and does not
+                        finalize a financial booking reservation until contract terms are signed.</p>
+                </div>
+            </div>
+
+            <div class="booking-form-box">
+                <form id="venueBookingForm" action="#" method="POST">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name / Company Representative *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+263 ...">
+                        </div>
+                        <div class="form-group">
+                            <label for="eventType">Event Category *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="" disabled selected>Select event type...</option>
+                                <option value="corporate-conference">Corporate Conference / Seminar</option>
+                                <option value="boardroom-meeting">Executive Boardroom Meeting</option>
+                                <option value="private-party">Private Celebration / Birthday</option>
+                                <option value="banquet-dinner">Banqueting / Corporate Gala</option>
+                                <option value="Outdoor-catering">Outdoor Catering </option>
+                                <option value="other">Other Event Type</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventDate">Preferred Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestCount">Estimated Guest Count *</label>
+                            <input type="number" id="guestCount" name="guestCount" min="5" max="500" required
+                                placeholder="e.g. 50">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Additional Optional Services Required</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="catering"> Include In-House Catering
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="accommodation"> Include Accommodation
+                                (Lindy's Place Stay)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalNotes">Special Requests or Setup Requirements</label>
+                        <textarea id="additionalNotes" name="additionalNotes" rows="4"
+                            placeholder="Tell us more about your ideal setup layouts, dietary requests, or audio-visual technical needs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-booking">Send Booking Inquiry</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script.js" defer>
+  
+    </script>
+
+</body>
+
+<footer>
+    <p>copy; 2024-2026 Cilla's Conference Centre. All Rights Reserved.</p>
+</footer>
+
+</html>

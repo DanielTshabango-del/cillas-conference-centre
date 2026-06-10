@@ -1,0 +1,17 @@
+function openGallery(evt, categoryId) {
+  // 1. Hide all gallery content blocks completely
+  const galleryContents = document.getElementsByClassName("gallery-content");
+  for (let i = 0; i < galleryContents.length; i++) {
+    galleryContents[i].classList.remove("active-gallery-content");
+  }
+
+  // 2. Remove the highlight active underline class from all gallery buttons
+  const galleryTabs = document.getElementsByClassName("gallery-tab-btn");
+  for (let i = 0; i < galleryTabs.length; i++) {
+    galleryTabs[i].classList.remove("active-gallery-tab");
+  }
+
+  // 3. Make the clicked category box visible and mark the tab as highlighted
+  document.getElementById(categoryId).classList.add("active-gallery-content");
+  evt.currentTarget.classList.add("active-gallery-tab");
+}

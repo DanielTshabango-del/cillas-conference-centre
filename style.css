@@ -1,0 +1,1033 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+/* Navigation Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo h2 {
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Navigation CTA Button */
+.cta-btn-nav {
+    background-color: #111;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(109, 109, 109, 0.4), rgba(197, 197, 197, 0.5))  no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #050505;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #6453a3;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #0a0a0a;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(26, 136, 53, 0.384);
+}
+
+
+
+/* Services Section Grid */
+
+/* conference centre images */
+.venue-card-img{
+    flex: 1;
+    width: 50%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Respnsive udjustment for mobile phones and small tables */
+.venue-card-img {
+    width: 75%;
+    min-height: 200px;
+
+}
+
+.services-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: #f3f1f1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    text-align: left;
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin: 20px 0 10px 0;
+    color: #111;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.card-image.placeholder {
+    height: 200px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #dcd3ff;
+    color: #020202;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-nav {
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+/* Services & Venues Page Specific Styles */
+
+.page-title {
+    background-color: #f1f3f5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.page-title p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Detailed Venue Cards Layout */
+.venue-showcase {
+    padding: 60px 8%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.venue-card-detailed {
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: 1px solid #eef0f2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+/* This class flips the image and text alignment for visual rhythm */
+.venue-card-detailed.reverse {
+    flex-direction: row-reverse;
+}
+
+.venue-gallery-placeholder {
+    flex: 1;
+    min-height: 350px;
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+
+.venue-info {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.venue-tag {
+    display: inline-block;
+    align-self: flex-start;
+    background: #e9ecef;
+    color: #495057;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.venue-info h2 {
+    font-size: 1.8rem;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.venue-info p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+/* Capacity Data Table Components */
+.capacity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.capacity-table th, .capacity-table td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+}
+
+.capacity-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.capacity-table td {
+    color: #555;
+}
+
+/* Card Action Button */
+.btn-card-action {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+.btn-card-action-catering {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #14043b;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-card-action-catering:hover {
+    background-color: #000;
+}
+
+.btn-card-action:hover {
+    background-color: #304bc4;
+}
+
+/* Active Nav Link Styling */
+nav ul li a.active {
+    color: #000;
+    font-weight: 700;
+}
+
+
+/*Styling for real venue imags*/
+.venue-image{
+    flex: 1;
+    min-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+    @media (max-width: 768px) {
+        .venue-image {
+            width: 100%;
+            min-height: 250px;
+        }
+    }
+
+    /* ==========================================================================
+   8. Catering Services Grid Styles
+   ========================================================================== */
+
+.catering-icon-box {
+    margin-bottom: 20px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.catering-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.catering-section {
+    padding: 60px 8%;
+    background-color: #f8f9fa; /* Soft background to separate sections */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: #111;
+    margin: 5px 0 15px 0;
+    letter-spacing: -0.5px;
+}
+
+.section-title p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.catering-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.catering-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    transition: transform 0.3s ease;
+}
+
+.catering-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.catering-icon-box {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.catering-card h3 {
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.catering-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   9. Accommodation Section Layout (Lindy's Place)
+   ========================================================================== */
+.accommodation-section {
+    padding: 100px 8%;
+    background-color: #ffffff;
+}
+
+.accommodation-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.accommodation-content {
+    flex: 1;
+}
+
+.accommodation-content .section-subtitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.accommodation-content h2 {
+    font-size: 2.2rem;
+    color: #111;
+    margin: 10px 0 20px 0;
+    letter-spacing: -0.5px;
+}
+
+.accommodation-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.amenities-list {
+    list-style: none;
+    margin: 25px 0 35px 0;
+}
+
+.amenities-list li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.btn-primary-dark {
+    display: inline-block;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary-dark:hover {
+    background-color: #333;
+}
+
+.accommodation-image-box {
+    flex: 1;
+    min-height: 450px;
+    background-color: #dfdfdf;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Overrides for Mobile Screens */
+@media (max-width: 992px) {
+    .accommodation-wrapper {
+        flex-direction: column-reverse; /* Put image placeholder on top on tablet/mobile */
+        gap: 40px;
+    }
+    
+    .accommodation-image-box {
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
+
+/* ==========================================================================
+   10. Director Profile Section Styles
+   ========================================================================== */
+
+/* Priscilla Mabhena profile image */
+.director-profile-img {
+    flex: 1;
+    width: 50%;
+    min-height: 400PX;
+    object-fit: cover;
+    object-position: centre top;
+    border-radius: 12px;
+
+}
+
+.director-profile-img {
+    width: 50%;
+    min-height: 100px;
+
+}
+
+.director-profile {
+    padding: 90px 8%;
+    background-color: #ffffff;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.profile-image-box {
+    flex: 1;
+    min-height: 300px;
+    background-color: #dfdfdf;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: 500;
+}
+
+.profile-text {
+    flex: 1.2;
+}
+
+.profile-subtitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.profile-text h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin: 5px 0 0px 0;
+    letter-spacing: -0.5px;
+}
+
+.title-tag {
+    font-size: 1.1rem;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.profile-text p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.quote-box {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 4px solid #111;
+}
+
+.quote-box blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   11. Awards & Achievements Timeline Component
+   ========================================================================== */
+.awards-section {
+    padding: 90px 8%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.awards-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.award-item {
+    display: flex;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eef0f2;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    transition: transform 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+}
+
+.award-year {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111;
+    min-width: 100px;
+    border-right: 2px solid #eee;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.award-details h3 {
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.award-issuer {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.award-details p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Tablet & Mobile Layouts */
+@media (max-width: 992px) {
+    .profile-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .profile-image-box {
+        width: 100%;
+        min-height: 350px;
+    }
+    
+    .award-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .award-year {
+        border-right: none;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        display: inline-block;
+        min-width: auto;
+    }
+}
+
+
+/* ==========================================================================
+   12. Booking Page Split Layout & Form Fields
+   ========================================================================== */
+.booking-section {
+    padding: 60px 8%;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+}
+
+.booking-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+}
+
+/* Sidebar Info Panel styling */
+.booking-info-sidebar {
+    flex: 1;
+    background-color: #111;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.booking-info-sidebar h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.booking-info-sidebar p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-quick-details {
+    margin: 40px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-item .icon {
+    font-size: 1.3rem;
+}
+
+.info-item p {
+    color: #fff;
+    font-weight: 500;
+}
+
+.booking-note {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #666;
+}
+
+.booking-note p {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Form Entry Box fields styling */
+.booking-form-box {
+    flex: 1.6;
+    padding: 50px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: 'Inter', sans-serif;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+/* Visual interaction focus highlights */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.03);
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.checkbox-label input {
+    cursor: pointer;
+    accent-color: #111; /* Gives checkboxes a clean dark profile tone */
+}
+
+/* Submit Execution Button Control */
+.btn-submit-booking {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-submit-booking:hover {
+    background-color: #333;
+}
+
+/* Responsive Media Overrides for Form Grid */
+@media (max-width: 992px) {
+    .booking-container {
+        flex-direction: column;
+    }
+    .booking-info-sidebar {
+        padding: 40px;
+    }
+    .booking-form-box {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVE NAVBAR STYLES
+   ========================================================================== */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* Menu Links (Desktop Default) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #4a7c59;
+}
+
+/* Toggle Button (Hidden on Desktop) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #2d5a27;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* ==========================================================================
+   THE RESPONSIVE MEDIA QUERY (For Mobile Screens)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show the hamburger icon on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide the links by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    position: absolute;
+    top: 100%; /* Sits perfectly right beneath the navbar */
+    left: 0;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* This active class will be triggered via JavaScript when clicked */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
