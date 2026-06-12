@@ -93,7 +93,7 @@ body {
    ========================================================================== */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(99, 99, 99, 0.747)), 
-              url('Images/Lindys Place Main House.jpg') no-repeat center center/cover;
+              url('Images/Air bnb Front building.jpg') no-repeat center center/cover;
   color: var(--white);
   text-align: center;
   padding: 140px 20px;

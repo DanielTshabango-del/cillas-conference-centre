@@ -46,7 +46,7 @@
       <p>Your beautiful home away from home. Bulawayo's ultimate modern tennis villa, tailored perfectly for relaxing
         stays, corporate accommodation, and elegant private functions.</p>
       <div class="hero-buttons">
-        <a href="Images/Tennis court.jpg" class="btn-primary">Book Now</a>
+        <a href="#Booking-form" class="btn-primary">Book Now</a>
       </div>
     </div>
   </section>
@@ -73,272 +73,292 @@
       </div>
       <div>
         <!-- Main Property Showcase Display Image -->
-        <img src="Images/Air bnb Front building.png" alt="Lindy's Place Main Property View"
+        <img src="Images/Air bnb Front building.jpg" alt="Lindy's Place Main Property View"
           style="width:100%; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
       </div>
     </div>
   </section>
 
-  
+
 
   <!-- Showcasing the Promotional Elements -->
-  
+
 
   <section class="section-padding" style="background-color: #f4f4f4;">
-  <div class="container">
-    <h2 class="section-title">Explore Our Specialized Packages</h2>
-    <p>Select a category below to view detailed information, tailored pricing structures, and specific amenities included with each venue configuration.</p>
+    <div class="container">
+      <h2 class="section-title">Explore Our Specialized Packages</h2>
+      <p>Select a category below to view detailed information, tailored pricing structures, and specific amenities
+        included with each venue configuration.</p>
 
-    <div class="tabs-container">
-      <button class="tab-btn active" onclick="openPackage(event, 'tennis-villa')">
-        <i class="fa-solid fa-tennis-ball"></i> Tennis Villa
-      </button>
-      <button class="tab-btn" onclick="openPackage(event, 'function-hire')">
-        <i class="fa-solid fa-cake-candles"></i> Function Hire
-      </button>
-      <button class="tab-btn" onclick="openPackage(event, 'corporate-booking')">
-        <i class="fa-solid fa-briefcase"></i> Corporate Booking
-      </button>
-    </div>
+      <div class="tabs-container">
+        <button class="tab-btn active" onclick="openPackage(event, 'tennis-villa')">
+          <i class="fa-solid fa-tennis-ball"></i> Tennis Villa
+        </button>
+        <button class="tab-btn" onclick="openPackage(event, 'function-hire')">
+          <i class="fa-solid fa-cake-candles"></i> Function Hire
+        </button>
+        <button class="tab-btn" onclick="openPackage(event, 'corporate-booking')">
+          <i class="fa-solid fa-briefcase"></i> Corporate Booking
+        </button>
+      </div>
 
-    <div id="tennis-villa" class="tab-content active-content">
-      <div class="package-layout">
-        <div class="package-info">
-          <h3>The Ultimate Tennis Villa Experience</h3>
-          <p>Perfect for sports enthusiasts, active families, or training retreats. Enjoy full private access to our beautifully maintained combinations tennis and basketball court during your entire stay.</p>
-          <ul class="package-details">
-            <li><i class="fa-solid fa-check"></i> Complete access to tennis & basketball court facilities.</li>
-            <li><i class="fa-solid fa-check"></i> Standard court boundaries and practice walls.</li>
-            <li><i class="fa-solid fa-check"></i> Access to all internal villa amenities (Starlink, Solar Power, Full Kitchen).</li>
-          </ul>
-        </div>
-        <div class="package-image">
-          <img src="Images/Tennis court.png" alt="Professional Tennis Court Experience at Lindy's Place">
-        </div>
+      <div id="tennis-villa" class="tab-content active-content">
+        <div class="package-layout">
+          <div class="package-info">
+            <h3>The Ultimate Tennis Villa Experience</h3>
+            <p>Perfect for sports enthusiasts, active families, or training retreats. Enjoy full private access to our
+              beautifully maintained combinations tennis and basketball court during your entire stay.</p>
+            <ul class="package-details">
+              <li><i class="fa-solid fa-check"></i> Complete access to tennis & basketball court facilities.</li>
+              <li><i class="fa-solid fa-check"></i> Standard court boundaries and practice walls.</li>
+              <li><i class="fa-solid fa-check"></i> Access to all internal villa amenities (Starlink, Solar Power, Full
+                Kitchen).</li>
+            </ul>
+          </div>
+          <div class="package-image">
+            <img src="Images/Tennis court.jpg" alt="Professional Tennis Court Experience at Lindy's Place">
+          </div>
           <div class="cta-container">
-  <a href="#Booking-form" class="btn-package-cta">
-    Book This Package <i class="fa-solid fa-arrow-right"></i>
-  </a>
-</div>
-      </div>
-    </div>
-
-    <!-- Function hire package  section -->
-    <div id="function-hire" class="tab-content">
-  
-  <div class="sub-tabs-container">
-    <button class="sub-tab-btn active-sub" onclick="openSubPackage(event, 'sub-baby-shower')">Baby Shower</button>
-    <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-bridal-shower')">Bridal Shower</button>
-    <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-tea-party')">Tea Party</button>
-    <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-braai-days')">Braai Days</button>
-  </div>
-
-  <div id="sub-baby-shower" class="sub-tab-content active-sub-content">
-    <div class="package-layout">
-      <div class="package-info">
-        <h3>Elegant Baby Showers</h3>
-        <p>Celebrate new beginnings on our beautifully manicured green lawn spaces. Our open-air aesthetic provides a pristine background layout for luxury picnics, floral arrangements, and memorable photography.</p>
-        <ul class="package-details">
-          <li><i class="fa-solid fa-check"></i> Custom layout configurations for low-to-ground picnic setups.</li>
-          <li><i class="fa-solid fa-check"></i> Welcome board easel framework and photo booth framing locations.</li>
-          <li><i class="fa-solid fa-check"></i> External catering-friendly staging areas.</li>
-        </ul>
-      </div>
-      <div class="package-image">
-        <img src="Images/Baby shower.png" alt="Baby Shower Celebration at Lindy's Place">
-      </div>
-    </div>
-  </div>
-
-  <div id="sub-bridal-shower" class="sub-tab-content">
-    <div class="package-layout">
-      <div class="package-info">
-        <h3>Bridal Showers</h3>
-        <p>Give the bride-to-be an unforgettable daytime send-off under the beautiful veranda roof structure or out in the open garden area. Perfect for luxury outdoor afternoon assemblies.</p>
-        <ul class="package-details">
-          <li><i class="fa-solid fa-check"></i> Full lounge configuration access under the veranda.</li>
-          <li><i class="fa-solid fa-check"></i> Elegant table arrangement space for gift displays.</li>
-          <li><i class="fa-solid fa-check"></i> Champagne glass setup coordinates available upon request.</li>
-        </ul>
-      </div>
-      <div class="package-image">
-        <img src="Images/Baby shower.png" alt="Bridal Shower Garden Setup">
-      </div>
-    </div>
-  </div>
-
-  <div id="sub-tea-party" class="sub-tab-content">
-    <div class="package-layout">
-      <div class="package-info">
-        <h3>Classic High Tea Parties</h3>
-        <p>Host charming, high-society style tea parties. The peaceful Hillside atmosphere makes it a wonderful environment for morning networks, book clubs, or sophisticated social clubs.</p>
-        <ul class="package-details">
-          <li><i class="fa-solid fa-check"></i> Shaded seating layouts spread beautifully across the lawn.</li>
-          <li><i class="fa-solid fa-check"></i> Hot water dispensing support for beverage setups.</li>
-          <li><i class="fa-solid fa-check"></i> Intimate layout restricted to premium guest headcounts.</li>
-        </ul>
-      </div>
-      <div class="package-image">
-        <img src="Images/Porch-Tea Party.png" alt="High Tea Party Platter Display">
-      </div>
-  
-    
-
-    </div>
-  </div>
-
-  <div id="sub-braai-days" class="sub-tab-content">
-    <div class="package-layout">
-      <div class="package-info">
-        <h3>Casual Braai Days & Family Gatherings</h3>
-        <p>Keep things laid-back and festive with our dedicated premium braai stands. Ideal for weekend birthday turnouts, small corporate bonding days, or relaxed family reunions.</p>
-        <ul class="package-details">
-          <li><i class="fa-solid fa-check"></i> Direct access to full brick or kettle braai equipment zones.</li>
-          <li><i class="fa-solid fa-check"></i> Casual outdoor bench or garden furniture array configurations.</li>
-          <li><i class="fa-solid fa-check"></i> Sound-friendly limits in a safe, completely secure boundary wall.</li>
-        </ul>
-      </div>
-      <div class="package-image">
-        <img src="Images/Braai Day (Bar area).png" alt="Braai Equipment Area on Property Patio">
-      </div>
-    </div>
-  </div>
-
-</div>
-<!-- Corporate package section -->
-    <div id="corporate-booking" class="tab-content">
-      <div class="package-layout">
-        <div class="package-info">
-          <h3>Executive Corporate & Expo Lodging</h3>
-          <p>Tailored specifically for corporate delegations traveling for international exhibitions like Mine Entra, local business summits, or team-building conferences in Bulawayo.</p>
-          <ul class="package-details">
-            <li><i class="fa-solid fa-check"></i> Multi-bedroom booking blocks for group business delegations.</li>
-            <li><i class="fa-solid fa-check"></i> Uninterrupted productivity with high-speed Starlink Wi-Fi.</li>
-            <li><i class="fa-solid fa-check"></i> Full solar backup protection for laptops, devices, and presentation prep.</li>
-          </ul>
+            <a href="#Booking-form" class="btn-package-cta">
+              Book ThisPackage <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="package-image">
-          <img src="Images/Double-bed.JPG" alt="Corporate Accommodation Spaces">
-        </div>
-    <div class="cta-container">
-  <a href="#Booking-form" class="btn-package-cta">
-    Book This Package <i class="fa-solid fa-arrow-right"></i>
-  </a>
-</div>
-
       </div>
-    </div>
- 
-  </div>
 
- 
-</section>
+      <!-- Function hire package  section -->
+      <div id="function-hire" class="tab-content">
 
-<!-- Gallery section -->
-<section class="section-padding" style="background-color: var(--white);">
-  <div class="container">
-    <h2 class="section-title">Explore the Property</h2>
-    <p>Take a tour through our premium interior layouts. Click the tabs below to explore the luxury configurations of the villa.</p>
-
-    <div class="gallery-tabs">
-      <button class="gallery-tab-btn active-gallery-tab" onclick="openGallery(event, 'gal-bedrooms')">Bedrooms (4)</button>
-      <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-bathrooms')">Bathrooms (3)</button>
-      <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-kitchen')">Kitchen (1)</button>
-      <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-common')">Common Area (1)</button>
-    </div>
-
-    <div id="gal-bedrooms" class="gallery-content active-gallery-content">
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="Images/Double-bed.JPG" alt="Master Bedroom Setup"></div>
-        <div class="gallery-item"><img src="Images/bedroom 2.JPG" alt="Luxury Bed Configurations"></div>
-        <div class="gallery-item"><img src="Images/Bedroom 3.JPG" alt="Alternative Bedroom View"></div>
-        <div class="gallery-item"><img src="Images/Bedroom 4 (bed).JPG" alt="Alternative Bedroom View"></div>
-      </div>
-    </div>
-
-    <div id="gal-bathrooms" class="gallery-content">
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="Images/Bathroom 1 (sink & bath).JPG" alt="Modern Bathroom Design"></div>
-        <div class="gallery-item"><img src="Images/Bathroom 2 (shared).JPG" alt="Premium Shower Amenities"></div>
-        <div class="gallery-item"><img src="Images/Bedroom 3.JPG" alt="Clean Towel and Vanity Setup"></div>
-      </div>
-    </div>
-
-    <div id="gal-kitchen" class="gallery-content">
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="Images/kitchen.jpg" alt="Fully Equipped Kitchen View"></div>
-        <div class="gallery-item"><img src="Images/Kitchen side.JPG" alt="Modern Stoves and Countertops"></div>
-        <div class="gallery-item"><img src="Images/kitchen.jpg" alt="Refrigerator and Appliance Setups"></div>
-      </div>
-    </div>
-
-    <div id="gal-common" class="gallery-content">
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="Images/living room.jpg" alt="Veranda Lounge Seating Area"></div>
-        <div class="gallery-item"><img src="Images/common area (side).JPG" alt="Indoor Lounge Area"></div>
-        <div class="gallery-item"><img src="Images/common area (side).JPG" alt="Dining Room Arrangement"></div>
-      </div>
-    </div>
-<!-- CTA button -->
-  <div class="cta-container">
-  <a href="#Booking-form" class="btn-package-cta">
-    Send inquiry <i class="fa-solid fa-arrow-right"></i>
-  </a>
-</div>
-  </div>
-
-</section>
-
-
-    <section class="reviews-section">
-        <div class="reviews-header">
-            <span class="rating-badge">★ 4.98 Guest Favorite</span>
-            <h2>What Our Airbnb Guests Say</h2>
+        <div class="sub-tabs-container">
+          <button class="sub-tab-btn active-sub" onclick="openSubPackage(event, 'sub-baby-shower')">Baby Shower</button>
+          <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-bridal-shower')">Bridal Shower</button>
+          <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-tea-party')">Tea Party</button>
+          <button class="sub-tab-btn" onclick="openSubPackage(event, 'sub-braai-days')">Braai Days</button>
         </div>
 
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"We had a great stay in a beautiful home, amazing garden and with a lovely host that went above and beyond to make us feel at home.
-                  Thank you Lindy for all the effort, it was a holiday we will cherish."
-                </p>
-                <div class="review-author">
-                    <h4>Karlo</h4>
-                    <span>Tennis Villa</span>
-                </div>
+        <div id="sub-baby-shower" class="sub-tab-content active-sub-content">
+          <div class="package-layout">
+            <div class="package-info">
+              <h3>Elegant Baby Showers</h3>
+              <p>Celebrate new beginnings on our beautifully manicured green lawn spaces. Our open-air aesthetic
+                provides a pristine background layout for luxury picnics, floral arrangements, and memorable
+                photography.</p>
+              <ul class="package-details">
+                <li><i class="fa-solid fa-check"></i> Custom layout configurations for low-to-ground picnic setups.</li>
+                <li><i class="fa-solid fa-check"></i> Welcome board easel framework and photo booth framing locations.
+                </li>
+                <li><i class="fa-solid fa-check"></i> External catering-friendly staging areas.</li>
+              </ul>
+            </div>
+            <div class="package-image">
+              <img src="Images/Baby shower.jpg" alt="Baby Shower Celebration at Lindy's Place">
+            </div>
+          </div>
+        </div>
+
+        <div id="sub-bridal-shower" class="sub-tab-content">
+          <div class="package-layout">
+            <div class="package-info">
+              <h3>Bridal Showers</h3>
+              <p>Give the bride-to-be an unforgettable daytime send-off under the beautiful veranda roof structure or
+                out in the open garden area. Perfect for luxury outdoor afternoon assemblies.</p>
+              <ul class="package-details">
+                <li><i class="fa-solid fa-check"></i> Full lounge configuration access under the veranda.</li>
+                <li><i class="fa-solid fa-check"></i> Elegant table arrangement space for gift displays.</li>
+                <li><i class="fa-solid fa-check"></i> Champagne glass setup coordinates available upon request.</li>
+              </ul>
+            </div>
+            <div class="package-image">
+              <img src="Images/Bridal-shower.jpg" alt="Bridal Shower Garden Setup">
+            </div>
+          </div>
+        </div>
+
+        <div id="sub-tea-party" class="sub-tab-content">
+          <div class="package-layout">
+            <div class="package-info">
+              <h3>Classic High Tea Parties</h3>
+              <p>Host charming, high-society style tea parties. The peaceful Hillside atmosphere makes it a wonderful
+                environment for morning networks, book clubs, or sophisticated social clubs.</p>
+              <ul class="package-details">
+                <li><i class="fa-solid fa-check"></i> Shaded seating layouts spread beautifully across the lawn.</li>
+                <li><i class="fa-solid fa-check"></i> Hot water dispensing support for beverage setups.</li>
+                <li><i class="fa-solid fa-check"></i> Intimate layout restricted to premium guest headcounts.</li>
+              </ul>
+            </div>
+            <div class="package-image">
+              <img src="Images/Porch-Tea Party.jpg" alt="High Tea Party Platter Display">
             </div>
 
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Our stay at Lindy's was wonderful. The place is very nice and peaceful, the accommodation is perfectly clean and true to the descriptions.
-                  But the best is Lindy who is absolutely awesome. Very nice, funny, welcoming while being respectful of our space.
-                  We went back at the end of our stay because we loved it so much! 
-                  I recommend it!"</p>
-                <div class="review-author">
-                    <h4>Pauline.</h4>
-                    <span>Vacation Stay</span>
-                </div>
-            </div>
 
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"An exceptional stay in every respect. The location is perfectly considered, the space immaculately clean, and the overall atmosphere
-                  wonderfully serene. What truly elevates the experience, however is the host, attentive, professional, and effortlessly welcoming. The result is a stay that feels both refined 
-                  and restorative. A genuinely great experience, and one I would recommend without hesitation.
-                </p>
-                <div class="review-author">
-                    <h4>B</h4>
-                    <span>Corporate Client</span>
-                </div>
-            </div>
-             <div class="cta-container">
-  <a href="#Booking-form" class="btn-package-cta">
-    Send inquiry <i class="fa-solid fa-arrow-right"></i>
-  </a>
-</div>
+
+          </div>
         </div>
-        
-    </section>
+
+        <div id="sub-braai-days" class="sub-tab-content">
+          <div class="package-layout">
+            <div class="package-info">
+              <h3>Casual Braai Days & Family Gatherings</h3>
+              <p>Keep things laid-back and festive with our dedicated premium braai stands. Ideal for weekend birthday
+                turnouts, small corporate bonding days, or relaxed family reunions.</p>
+              <ul class="package-details">
+                <li><i class="fa-solid fa-check"></i> Direct access to full brick or kettle braai equipment zones.</li>
+                <li><i class="fa-solid fa-check"></i> Casual outdoor bench or garden furniture array configurations.
+                </li>
+                <li><i class="fa-solid fa-check"></i> Sound-friendly limits in a safe, completely secure boundary wall.
+                </li>
+              </ul>
+            </div>
+            <div class="package-image">
+              <img src="Images/Braai Day (Bar area).jpg" alt="Braai Equipment Area on Property Patio">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Corporate package section -->
+      <div id="corporate-booking" class="tab-content">
+        <div class="package-layout">
+          <div class="package-info">
+            <h3>Executive Corporate & Expo Lodging</h3>
+            <p>Tailored specifically for corporate delegations traveling for international exhibitions like Mine Entra,
+              local business summits, or team-building conferences in Bulawayo.</p>
+            <ul class="package-details">
+              <li><i class="fa-solid fa-check"></i> Multi-bedroom booking blocks for group business delegations.</li>
+              <li><i class="fa-solid fa-check"></i> Uninterrupted productivity with high-speed Starlink Wi-Fi.</li>
+              <li><i class="fa-solid fa-check"></i> Full solar backup protection for laptops, devices, and presentation
+                prep.</li>
+            </ul>
+          </div>
+          <div class="package-image">
+            <img src="Images/Double-bed.JPG" alt="Corporate Accommodation Spaces">
+          </div>
+          <div class="cta-container">
+            <a href="#Booking-form" class="btn-package-cta">
+              Book This Package <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Gallery section -->
+  <section class="section-padding" style="background-color: var(--white);">
+    <div class="container">
+      <h2 class="section-title">Explore the Property</h2>
+      <p>Take a tour through our premium interior layouts. Click the tabs below to explore the luxury configurations of
+        the villa.</p>
+
+      <div class="gallery-tabs">
+        <button class="gallery-tab-btn active-gallery-tab" onclick="openGallery(event, 'gal-bedrooms')">Bedrooms
+          (4)</button>
+        <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-bathrooms')">Bathrooms (3)</button>
+        <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-kitchen')">Kitchen (1)</button>
+        <button class="gallery-tab-btn" onclick="openGallery(event, 'gal-common')">Common Area (1)</button>
+      </div>
+
+      <div id="gal-bedrooms" class="gallery-content active-gallery-content">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Images/Double-bed.JPG" alt="Master Bedroom Setup"></div>
+          <div class="gallery-item"><img src="Images/bedroom 2.JPG" alt="Luxury Bed Configurations"></div>
+          <div class="gallery-item"><img src="Images/Bedroom 3.JPG" alt="Alternative Bedroom View"></div>
+          <div class="gallery-item"><img src="Images/Bedroom 4 (bed).JPG" alt="Alternative Bedroom View"></div>
+        </div>
+      </div>
+
+      <div id="gal-bathrooms" class="gallery-content">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Images/Bathroom 1 (sink & bath).JPG" alt="Modern Bathroom Design"></div>
+          <div class="gallery-item"><img src="Images/Bathroom 2 (shared).JPG" alt="Premium Shower Amenities"></div>
+          <div class="gallery-item"><img src="Images/Bedroom 3.JPG" alt="Clean Towel and Vanity Setup"></div>
+        </div>
+      </div>
+
+      <div id="gal-kitchen" class="gallery-content">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Images/kitchen.jpg" alt="Fully Equipped Kitchen View"></div>
+          <div class="gallery-item"><img src="Images/Kitchen -close up.jpg" alt="Modern Stoves and Countertops"></div>
+          <div class="gallery-item"><img src="Images/Kitchen side.jpg" alt="Refrigerator and Appliance Setups"></div>
+        </div>
+      </div>
+
+      <div id="gal-common" class="gallery-content">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Images/common area (side).jpg" alt="Veranda Lounge Seating Area"></div>
+          <div class="gallery-item"><img src="Images/common area (side).JPG" alt="Indoor Lounge Area"></div>
+
+        </div>
+      </div>
+      <!-- CTA button -->
+      <div class="cta-container">
+        <a href="#Booking-form" class="btn-package-cta">
+          Send inquiry <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="reviews-section">
+    <div class="reviews-header">
+      <span class="rating-badge">★ 4.98 Guest Favorite</span>
+      <h2>What Our Airbnb Guests Say</h2>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We had a great stay in a beautiful home, amazing garden and with a lovely host that went
+          above and beyond to make us feel at home.
+          Thank you Lindy for all the effort, it was a holiday we will cherish."
+        </p>
+        <div class="review-author">
+          <h4>Karlo</h4>
+          <span>Tennis Villa</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Our stay at Lindy's was wonderful. The place is very nice and peaceful, the
+          accommodation is perfectly clean and true to the descriptions.
+          But the best is Lindy who is absolutely awesome. Very nice, funny, welcoming while being respectful of our
+          space.
+          We went back at the end of our stay because we loved it so much!
+          I recommend it!"</p>
+        <div class="review-author">
+          <h4>Pauline.</h4>
+          <span>Vacation Stay</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"An exceptional stay in every respect. The location is perfectly considered, the space
+          immaculately clean, and the overall atmosphere
+          wonderfully serene. What truly elevates the experience, however is the host, attentive, professional, and
+          effortlessly welcoming. The result is a stay that feels both refined
+          and restorative. A genuinely great experience, and one I would recommend without hesitation.
+        </p>
+        <div class="review-author">
+          <h4>B</h4>
+          <span>Corporate Client</span>
+        </div>
+      </div>
+      <div class="cta-container">
+        <a href="#Booking-form" class="btn-package-cta">
+          Send inquiry <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </section>
 
 
 
@@ -392,7 +412,7 @@
     </div>
 
 
-    
+
   </section>
   <!-- Top Contact Details Quick Strip -->
   <div class="info-strip">
@@ -401,7 +421,7 @@
     <a href="mailto:lindysplace08@gmail.com"><i class="fa-solid fa-envelope"></i> lindysplace08@gmail.com</a>
 
     <script src="script.js" defer>
-    
+
     </script>
 
 </body>
