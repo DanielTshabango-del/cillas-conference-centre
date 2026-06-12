@@ -1031,3 +1031,88 @@ nav ul li a.active {
 }
 
 
+/* ==========================================================================
+   PHILANTHROPY & COMMUNITY SECTION STYLES
+   ========================================================================== */
+.philanthropy-section {
+  border-top: 1px solid #eef2ed;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* 3-Column Grid for Philanthropy Cards */
+.philanthropy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.philanthropy-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid #eef2ed;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Subtle border color accent on hover */
+.philanthropy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(45, 90, 39, 0.06);
+  border-color: #2d5a27; /* Matches your rich venue green */
+}
+
+/* Icon Design */
+.philo-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e8ede7; /* Soft green tint */
+  color: #2d5a27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.philanthropy-card:hover .philo-icon {
+  background-color: #2d5a27;
+  color: #ffffff;
+}
+
+.philanthropy-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.philanthropy-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive adjust for phones */
+@media (max-width: 768px) {
+  .philanthropy-grid {
+    grid-template-columns: 1fr; /* Stacks cards perfectly vertically */
+  }
+  .philanthropy-card {
+    padding: 25px 20px;
+  }
+}
