@@ -1100,3 +1100,118 @@ html {
     font-size: 1.8rem;
   }
 }
+
+
+/* ==========================================================================
+   HORIZONTAL SWIPEABLE REVIEWS CAROUSEL
+   ========================================================================== */
+.reviews-section {
+  overflow: hidden; /* Prevents card shadows from spilling outside main layout */
+}
+
+/* The Horizontal Scroll Track */
+.reviews-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto; /* Activates the horizontal scroll capabilities */
+  scroll-snap-type: x mandatory; /* Makes cards snap smoothly into position */
+  padding: 20px 5px 35px 5px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Ensures ultra-smooth kinetic swiping on iOS */
+}
+
+/* Hides the default ugly browser scrollbar on Firefox/IE */
+.reviews-carousel {
+  scrollbar-width: thin;
+  scrollbar-color: #2d5a27 #e8ede7;
+}
+
+/* Custom Webkit scrollbar stylings for a cleaner look */
+.reviews-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.reviews-carousel::-webkit-scrollbar-track {
+  background: #e8ede7;
+  border-radius: 10px;
+}
+
+.reviews-carousel::-webkit-scrollbar-thumb {
+  background: #2d5a27; /* Venue primary green pointer tint */
+  border-radius: 10px;
+}
+
+/* Individual Review Card Framework */
+.review-card {
+  flex: 0 0 calc(33.333% - 16px); /* Shows exactly 3 cards at a time on desktop screens */
+  min-width: 300px; /* Keeps cards safe from compressing into tiny vertical blocks */
+  scroll-snap-align: start; /* Pins card edge right inline when scrolling stops */
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  border: 1px solid #eef2ed;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(45, 90, 39, 0.05);
+}
+
+/* Card Elements Typography styling */
+.review-stars {
+  color: #ffb100; /* Warm gold star colors */
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-style: italic;
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.review-author h4 {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0 0 2px 0;
+  font-weight: 600;
+}
+
+.review-author span {
+  font-size: 0.85rem;
+  color: #2d5a27;
+  font-weight: 500;
+}
+
+/* Small interactive instructional text */
+.carousel-hint {
+  text-align: center;
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.carousel-hint i {
+  margin-right: 4px;
+}
+
+/* Responsive Media Viewports */
+@media (max-width: 992px) {
+  .review-card {
+    flex: 0 0 calc(50% - 12px); /* Switches layout grid to show 2 cards on tablet views */
+  }
+}
+
+@media (max-width: 650px) {
+  .review-card {
+    flex: 0 0 85%; /* Stretches the card wide enough to cover mobile screen layouts */
+    scroll-snap-align: center; /* Centers the active card directly on phone screens */
+  }
+}

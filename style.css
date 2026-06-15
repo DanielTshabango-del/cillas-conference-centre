@@ -18,8 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -29,6 +29,7 @@ header .logo h2 {
     font-weight: 700;
     color: #111;
     letter-spacing: -1px;
+
 }
 
 nav ul {
@@ -62,10 +63,10 @@ nav ul li a:hover {
 }
 
 
-/* Hero Section */
+/* Hero Section home page*/
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(109, 109, 109, 0.4), rgba(197, 197, 197, 0.5))  no-repeat center center/cover;
+    background: linear-gradient(180deg, #d1e7dd 0%, #ffffff 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,49 +76,59 @@ nav ul li a:hover {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    line-height: 1.3;
     margin-bottom: 20px;
-    letter-spacing: -1px;
-    max-width: 800px;
+    letter-spacing: -0.5;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.9;
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 40px auto;
+
 }
 
 /* Buttons */
-.btn-primary, .btn-secondary {
-    padding: 14px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0 10px;
-    display: inline-block;
-    transition: all 0.3s ease;
+.btn-primary,
+.btn-secondary {
+    margin: 32px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 280px;
 }
 
+/* request a quote button */
 .btn-primary {
-    background-color: #000000;
-    color: #ffffff;
+  background-color:  #0c2340;
+  color: #FFFFFF;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #6453a3;
+    background-color: #432b97;
 }
 
 .btn-secondary {
-    border: 2px solid #ffffff;
-    color: #0a0a0a;
+    background-color: transparent;
+    color: #041c3a;
+    padding: 14px 24px;
+    border: 1.5px solid #070d46;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+
 }
 
 .btn-secondary:hover {
-    background-color: rgba(26, 136, 53, 0.384);
+    background-color: rgba(85, 155, 102, 0.692);
 }
 
 
@@ -125,12 +136,14 @@ nav ul li a:hover {
 /* Services Section Grid */
 
 /* conference centre images */
-.venue-card-img{
-    flex: 1;
-    width: 50%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
+.venue-card-img {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+
+
 }
 
 /* Respnsive udjustment for mobile phones and small tables */
@@ -161,7 +174,7 @@ nav ul li a:hover {
     background: #f3f1f1;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
     text-align: left;
     transition: transform 0.3s;
     border: 1px solid #eee;
@@ -208,11 +221,6 @@ footer {
 
 
 
-
-
-
-
-
 /* Services & Venues Page Specific Styles */
 
 .page-title {
@@ -222,10 +230,10 @@ footer {
 }
 
 .page-title h1 {
-    font-size: 2.5rem;
-    color: #111;
-    margin-bottom: 10px;
-    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    letter-spacing: -0.5;
+
 }
 
 .page-title p {
@@ -242,6 +250,7 @@ footer {
 
 .container {
     max-width: 1200px;
+    max-height: fit-content;
     margin: 0 auto;
 }
 
@@ -315,7 +324,8 @@ footer {
     text-align: left;
 }
 
-.capacity-table th, .capacity-table td {
+.capacity-table th,
+.capacity-table td {
     padding: 10px 12px;
     font-size: 0.9rem;
     border-bottom: 1px solid #eee;
@@ -344,6 +354,7 @@ footer {
     font-size: 0.9rem;
     transition: background 0.3s;
 }
+
 .btn-card-action-catering {
     display: inline-block;
     align-self: flex-start;
@@ -373,21 +384,22 @@ nav ul li a.active {
 
 
 /*Styling for real venue imags*/
-.venue-image{
+.venue-image {
     flex: 1;
     min-height: 250px;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-    @media (max-width: 768px) {
-        .venue-image {
-            width: 100%;
-            min-height: 250px;
-        }
-    }
 
-    /* ==========================================================================
+@media (max-width: 768px) {
+    .venue-image {
+        width: 100%;
+        min-height: 250px;
+    }
+}
+
+/* ==========================================================================
    8. Catering Services Grid Styles
    ========================================================================== */
 
@@ -406,7 +418,8 @@ nav ul li a.active {
 
 .catering-section {
     padding: 60px 8%;
-    background-color: #f8f9fa; /* Soft background to separate sections */
+    background-color: #f8f9fa;
+    /* Soft background to separate sections */
 }
 
 .section-title {
@@ -446,13 +459,13 @@ nav ul li a.active {
     padding: 40px 30px;
     border-radius: 12px;
     border: 1px solid #eee;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     transition: transform 0.3s ease;
 }
 
 .catering-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
 .catering-icon-box {
@@ -538,6 +551,10 @@ nav ul li a.active {
 }
 
 .accommodation-image-box {
+    background-image: url('Images/Air bnb Front building.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1;
     min-height: 450px;
     background-color: #dfdfdf;
@@ -554,10 +571,11 @@ nav ul li a.active {
 /* Responsive Overrides for Mobile Screens */
 @media (max-width: 992px) {
     .accommodation-wrapper {
-        flex-direction: column-reverse; /* Put image placeholder on top on tablet/mobile */
+        flex-direction: column-reverse;
+        /* Put image placeholder on top on tablet/mobile */
         gap: 40px;
     }
-    
+
     .accommodation-image-box {
         width: 100%;
         min-height: 300px;
@@ -571,12 +589,9 @@ nav ul li a.active {
 
 /* Priscilla Mabhena profile image */
 .director-profile-img {
-    flex: 1;
-    width: 50%;
-    min-height: 400PX;
-    object-fit: cover;
-    object-position: centre top;
-    border-radius: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+
 
 }
 
@@ -678,13 +693,13 @@ nav ul li a.active {
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #eef0f2;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     transition: transform 0.3s ease;
 }
 
 .award-item:hover {
     transform: translateX(5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
 }
 
 .award-year {
@@ -725,17 +740,17 @@ nav ul li a.active {
         flex-direction: column;
         gap: 40px;
     }
-    
+
     .profile-image-box {
         width: 100%;
         min-height: 350px;
     }
-    
+
     .award-item {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .award-year {
         border-right: none;
         border-bottom: 2px solid #eee;
@@ -868,7 +883,7 @@ nav ul li a.active {
 .form-group textarea:focus {
     outline: none;
     border-color: #111;
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.03);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
 }
 
 .checkbox-group {
@@ -889,7 +904,8 @@ nav ul li a.active {
 
 .checkbox-label input {
     cursor: pointer;
-    accent-color: #111; /* Gives checkboxes a clean dark profile tone */
+    accent-color: #111;
+    /* Gives checkboxes a clean dark profile tone */
 }
 
 /* Submit Execution Button Control */
@@ -916,9 +932,11 @@ nav ul li a.active {
     .booking-container {
         flex-direction: column;
     }
+
     .booking-info-sidebar {
         padding: 40px;
     }
+
     .booking-form-box {
         padding: 40px;
     }
@@ -929,6 +947,7 @@ nav ul li a.active {
         flex-direction: column;
         gap: 0;
     }
+
     .checkbox-group {
         flex-direction: column;
         gap: 10px;
@@ -942,92 +961,99 @@ nav ul li a.active {
    MOBILE RESPONSIVE NAVBAR STYLES
    ========================================================================== */
 .navbar {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 /* Menu Links (Desktop Default) */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-  transition: max-height 0.3s ease-in-out;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #2b2b2b;
-  font-weight: 500;
-  font-size: 1.05rem;
-  transition: color 0.2s ease;
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #4a7c59;
+    color: #4a7c59;
 }
 
 /* Toggle Button (Hidden on Desktop) */
 .nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #2d5a27;
-  font-size: 1.6rem;
-  cursor: pointer;
-  padding: 5px;
+    display: none;
+    background: none;
+    border: none;
+    color: #2d5a27;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 5px;
 }
 
 /* ==========================================================================
    THE RESPONSIVE MEDIA QUERY (For Mobile Screens)
    ========================================================================== */
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: block; /* Show the hamburger icon on mobile */
-  }
+    .nav-toggle {
+        display: block;
+        /* Show the hamburger icon on mobile */
+    }
 
-  .nav-links {
-    display: none; /* Hide the links by default on small screens */
-    flex-direction: column; /* Stack links vertically */
-    width: 100%;
-    position: absolute;
-    top: 100%; /* Sits perfectly right beneath the navbar */
-    left: 0;
-    background-color: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    gap: 15px;
-  }
+    .nav-links {
+        display: none;
+        /* Hide the links by default on small screens */
+        flex-direction: column;
+        /* Stack links vertically */
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        /* Sits perfectly right beneath the navbar */
+        background-color: #dddcdcad;
+        padding: 20px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        text-align: left;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        gap: 15px;
+    }
 
-  /* This active class will be triggered via JavaScript when clicked */
-  .nav-links.active {
-    display: flex;
-  }
+    /* This active class will be triggered via JavaScript when clicked */
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 
@@ -1035,84 +1061,287 @@ nav ul li a.active {
    PHILANTHROPY & COMMUNITY SECTION STYLES
    ========================================================================== */
 .philanthropy-section {
-  border-top: 1px solid #eef2ed;
+    border-top: 1px solid #eef2ed;
 }
 
 .section-subtitle {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  color: #666;
-  font-size: 1.05rem;
-  line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 /* 3-Column Grid for Philanthropy Cards */
 .philanthropy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
 }
 
 /* Individual Card Styling */
 .philanthropy-card {
-  background: #ffffff;
-  padding: 35px 25px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-  border: 1px solid #eef2ed;
-  transition: all 0.3s ease-in-out;
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    border: 1px solid #eef2ed;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Subtle border color accent on hover */
 .philanthropy-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(45, 90, 39, 0.06);
-  border-color: #2d5a27; /* Matches your rich venue green */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(45, 90, 39, 0.06);
+    border-color: #2d5a27;
+    /* Matches your rich venue green */
 }
 
 /* Icon Design */
 .philo-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #e8ede7; /* Soft green tint */
-  color: #2d5a27;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 auto 20px auto;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
+    width: 60px;
+    height: 60px;
+    background-color: #e8ede7;
+    /* Soft green tint */
+    color: #2d5a27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .philanthropy-card:hover .philo-icon {
-  background-color: #2d5a27;
-  color: #ffffff;
+    background-color: #2d5a27;
+    color: #ffffff;
 }
 
 .philanthropy-card h3 {
-  font-size: 1.25rem;
-  color: #333;
-  margin-bottom: 12px;
-  font-weight: 600;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .philanthropy-card p {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Responsive adjust for phones */
 @media (max-width: 768px) {
-  .philanthropy-grid {
-    grid-template-columns: 1fr; /* Stacks cards perfectly vertically */
-  }
-  .philanthropy-card {
-    padding: 25px 20px;
-  }
+    .philanthropy-grid {
+        grid-template-columns: 1fr;
+        /* Stacks cards perfectly vertically */
+    }
+
+    .philanthropy-card {
+        padding: 25px 20px;
+    }
+}
+
+
+
+/* Lightbox Background Overlay */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Image Itself */
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/* Custom Typography & Resets (adjust to fit your current site theme) */
+.philanthropy-section {
+    padding: 60px 20px;
+    background-color: #fcfcfc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+.philanthropy-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #0d47a1;
+    /* Classic Corporate Blue - tweak to match logo */
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 40px 0;
+}
+
+/* Initiative Layout Styles */
+.initiative-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.initiative-content h3 {
+    font-size: 1.6rem;
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.initiative-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.initiative-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.initiative-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Custom bullet indicator */
+.initiative-list li::before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    color: #1565c0;
+    font-size: 1.5rem;
+}
+
+/* Image Galleries layout */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: translateY(-5px);
+}
+
+/* Call to Action Banner */
+.cta-box {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 6px 12px rgba(13, 71, 161, 0.15);
+}
+
+.cta-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta-box p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #050442;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    color: #66748b;
+}
+
+/* Responsive viewports for tablets and desktops */
+@media (min-width: 768px) {
+    .initiative-block {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .initiative-content {
+        flex: 1.2;
+    }
+
+    .image-gallery {
+        flex: 1;
+    }
+
+    /* Flip alternate rows for visual balance */
+    .initiative-block.reverse {
+        flex-direction: row-reverse;
+    }
 }

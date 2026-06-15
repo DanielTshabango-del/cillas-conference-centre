@@ -80,3 +80,24 @@ function openGallery(evt, categoryId) {
   document.getElementById(categoryId).classList.add("active-gallery-content");
   evt.currentTarget.classList.add("active-gallery-tab");
 }
+
+/* award img  */
+const triggers = document.querySelectorAll('.lightbox-trigger');
+const lightbox = document.getElementById('custom-lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox-close');
+
+triggers.forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    const imageSrc = trigger.getAttribute('data-image');
+    lightboxImg.src = imageSrc;
+    lightbox.style.display = 'flex';
+  });
+});
+
+// Close lightbox when clicking the 'X' or outside the image
+closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) lightbox.style.display = 'none';
+});

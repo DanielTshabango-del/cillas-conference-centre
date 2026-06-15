@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lindy's Place - Ultimate Tennis Villa & Venue</title>
+  <title>Lindy's Place - Ultimate Tennis Stay & Venue</title>
   <!-- Font Awesome for modern, clean layout icons -->
   <link rel="stylesheet" href="style 2.css">
 
@@ -43,10 +43,10 @@
 
     <div class="container">
       <h1>Lindy's Place</h1>
-      <p>Your beautiful home away from home. Bulawayo's ultimate modern tennis villa, tailored perfectly for relaxing
+      <p>Your beautiful home away from home. Bulawayo's ultimate modern tennis Stay, tailored perfectly for relaxing
         stays, corporate accommodation, and elegant private functions.</p>
       <div class="hero-buttons">
-        <a href="#Booking-form" class="btn-primary">Book Now</a>
+        <a href="#Booking-section" class="btn-primary">Book Now</a>
       </div>
     </div>
   </section>
@@ -80,10 +80,7 @@
   </section>
 
 
-
-  <!-- Showcasing the Promotional Elements -->
-
-
+  <!-- Showcasing the Promotional Elements packages-->
   <section class="section-padding" style="background-color: #f4f4f4;">
     <div class="container">
       <h2 class="section-title">Explore Our Specialized Packages</h2>
@@ -91,8 +88,8 @@
         included with each venue configuration.</p>
 
       <div class="tabs-container">
-        <button class="tab-btn active" onclick="openPackage(event, 'tennis-villa')">
-          <i class="fa-solid fa-tennis-ball"></i> Tennis Villa
+        <button class="tab-btn active" onclick="openPackage(event, 'tennis-Stay')">
+          <i class="fa-solid fa-tennis-ball"></i> Tennis Stay
         </button>
         <button class="tab-btn" onclick="openPackage(event, 'function-hire')">
           <i class="fa-solid fa-cake-candles"></i> Function Hire
@@ -102,16 +99,16 @@
         </button>
       </div>
 
-      <div id="tennis-villa" class="tab-content active-content">
+      <div id="tennis-Stay" class="tab-content active-content">
         <div class="package-layout">
           <div class="package-info">
-            <h3>The Ultimate Tennis Villa Experience</h3>
+            <h3>The Ultimate Tennis Stay Experience</h3>
             <p>Perfect for sports enthusiasts, active families, or training retreats. Enjoy full private access to our
               beautifully maintained combinations tennis and basketball court during your entire stay.</p>
             <ul class="package-details">
               <li><i class="fa-solid fa-check"></i> Complete access to tennis & basketball court facilities.</li>
               <li><i class="fa-solid fa-check"></i> Standard court boundaries and practice walls.</li>
-              <li><i class="fa-solid fa-check"></i> Access to all internal villa amenities (Starlink, Solar Power, Full
+              <li><i class="fa-solid fa-check"></i> Access to all internal Stay amenities (Starlink, Solar Power, Full
                 Kitchen).</li>
             </ul>
           </div>
@@ -202,10 +199,10 @@
               <p>Keep things laid-back and festive with our dedicated premium braai stands. Ideal for weekend birthday
                 turnouts, small corporate bonding days, or relaxed family reunions.</p>
               <ul class="package-details">
-                <li><i class="fa-solid fa-check"></i> Direct access to full brick or kettle braai equipment zones.</li>
+                <li><i class="fa-solid fa-check"></i> Direct access to kettle braai & equipment.</li>
                 <li><i class="fa-solid fa-check"></i> Casual outdoor bench or garden furniture array configurations.
                 </li>
-                <li><i class="fa-solid fa-check"></i> Sound-friendly limits in a safe, completely secure boundary wall.
+                <li><i class="fa-solid fa-check"></i> Flexible kitchen use 
                 </li>
               </ul>
             </div>
@@ -221,7 +218,7 @@
         <div class="package-layout">
           <div class="package-info">
             <h3>Executive Corporate & Expo Lodging</h3>
-            <p>Tailored specifically for corporate delegations traveling for international exhibitions like Mine Entra,
+            <p>Tailored specifically for corporate delegations traveling for international exhibitions like Mine Entra, ZITF,
               local business summits, or team-building conferences in Bulawayo.</p>
             <ul class="package-details">
               <li><i class="fa-solid fa-check"></i> Multi-bedroom booking blocks for group business delegations.</li>
@@ -247,12 +244,13 @@
 
   </section>
 
+
   <!-- Gallery section -->
   <section class="section-padding" style="background-color: var(--white);">
     <div class="container">
       <h2 class="section-title">Explore the Property</h2>
       <p>Take a tour through our premium interior layouts. Click the tabs below to explore the luxury configurations of
-        the villa.</p>
+        the Stay.</p>
 
       <div class="gallery-tabs">
         <button class="gallery-tab-btn active-gallery-tab" onclick="openGallery(event, 'gal-bedrooms')">Bedrooms
@@ -305,26 +303,35 @@
   </section>
 
 
-  <section class="reviews-section">
-    <div class="reviews-header">
-      <span class="rating-badge">★ 4.98 Guest Favorite</span>
-      <h2>What Our Airbnb Guests Say</h2>
-    </div>
+  <!-- Swipeable Reviews Section -->
+<section class="section-padding reviews-section" style="background-color: #ffffff;">
+  <div class="container">
+    <h2 class="section-title">Guest Experiences</h2>
+    <p class="section-subtitle">Read authentic feedback from visitors who have stayed at our Stay or hosted unforgettable private functions on our grounds.</p>
 
-    <div class="reviews-grid">
+    <!-- The Swipeable Carousel Window -->
+    <div class="reviews-carousel">
+      
+      <!-- Review Card 1 -->
       <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"We had a great stay in a beautiful home, amazing garden and with a lovely host that went
           above and beyond to make us feel at home.
-          Thank you Lindy for all the effort, it was a holiday we will cherish."
-        </p>
+          Thank you Lindy for all the effort, it was a holiday we will cherish."</p>
         <div class="review-author">
-          <h4>Karlo</h4>
-          <span>Tennis Villa</span>
+          <h4>Karlo.</h4>
+          <span>Tennis Stay</span>
         </div>
       </div>
 
+      <!-- Review Card 2 -->
       <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"Our stay at Lindy's was wonderful. The place is very nice and peaceful, the
           accommodation is perfectly clean and true to the descriptions.
@@ -333,32 +340,236 @@
           We went back at the end of our stay because we loved it so much!
           I recommend it!"</p>
         <div class="review-author">
-          <h4>Pauline.</h4>
-          <span>Vacation Stay</span>
+          <h4>Pauline</h4>
+          <span>Vacation stay</span>
         </div>
       </div>
 
+      <!-- Review Card 3 -->
       <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"An exceptional stay in every respect. The location is perfectly considered, the space
           immaculately clean, and the overall atmosphere
           wonderfully serene. What truly elevates the experience, however is the host, attentive, professional, and
           effortlessly welcoming. The result is a stay that feels both refined
-          and restorative. A genuinely great experience, and one I would recommend without hesitation.
-        </p>
+          and restorative. A genuinely great experience, and one I would recommend without hesitation.</p>
         <div class="review-author">
           <h4>B</h4>
-          <span>Corporate Client</span>
+          <span>Corporate stay</span>
         </div>
       </div>
-      <div class="cta-container">
-        <a href="#Booking-form" class="btn-package-cta">
-          Send inquiry <i class="fa-solid fa-arrow-right"></i>
-        </a>
+
+      <!-- Review Card 4 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy's place is perfect home away from home with beautiful garden that is open for exploration. Lindy's Jack Russell dogs were an instant joy to my daughters who thoroughly enjoyed playing with them. I would not hesitate to recommend Lindy's place to a prospective guest. Try it, and you wont regret it.
+"</p>
+        <div class="review-author">
+          <h4> Hasmin (United Arab Emirates)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
       </div>
+
+       <!-- Review Card 5 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy was splendid and welcoming into her beautiful property. We particularly enjoyed her delightful dogs and the immaculate gardens.
+ We look forward to staying with her again."</p>
+        <div class="review-author">
+          <h4> Lorraine (Victoria Falls, Zimbabwe)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+        <!-- Review Card 6 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy's Place was a wonderful retreat for my family! The fully equipped kitchen with stove, microwave, and fridge made meal times a breeze. The backup solar power ensured we had electricity throughout our stay. The peaceful surroundings and lush vegetation created a serene atmosphere, making it feel like a home away from home. Conveniently located near the CBD and dining options, I would highly recommend Lindy Place to anyone visiting or passing through Bulawayo...oh and not forgetting the adorable Jack Russells Scotty, and JJ.
+"</p>
+        <div class="review-author">
+          <h4>David</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+        <!-- Review Card 7 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">" Perfect home away from home. Our kids really loved the home 🏠 and the 🐕 🐕.
+ We need to rebook the house for a longer stay, as the two nights we stayed were very short.
+"</p>
+        <div class="review-author">
+          <h4>Hamilton (Johannesburg, South Africa)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+        <!-- Review Card 8 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Great hosts you felt right at home. They even made sure they gave us fruits from home.
+"</p>
+        <div class="review-author">
+          <h4> Percival (Harare, Zimbabwe)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+        <!-- Review Card 9 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The host is very, very welcoming and patiently introduced the room facilities and surroundings. I am very grateful for the attentive care and greetings these days.
+"</p>
+        <div class="review-author">
+          <h4>Guoxiang (Zhou, China)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+        <!-- Review Card 10 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"My visit to Lindy was excellent. The accommodation is clean, well maintained and new. There is not a negative point. At the same time, Lindy is welcoming and nice. Highly recommended.
+"</p>
+        <div class="review-author">
+          <h4>Beston Sauti (Lusaka, Zambia)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 11 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy's place is beautiful 😍, Lindy is very friendly."</p>
+        <div class="review-author">
+          <h4>Ntombizodwa (Kadoma, Zimbabwe)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 12 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We had a beautiful stay at Lindy's place, the hosts were very attentive and helpful with every request. The house has a very beautiful, well maintained garden that you can chill or grill on. I will definitely recommend this place. Thank you so much for the wonderful stay.
+"</p>
+        <div class="review-author">
+          <h4>Henriette</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 13 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy's place is the best of the best you'll ever wish to stay in Bulawayo Zimbabwe, spacious land, many outdoor sitting and chilling areas, beautiful garden and very clean rooms and bathrooms.
+Lindy and her husband are very kind and hospitable and you'll feel like home here.
+It's a few minutes walk to Hillside dams and very safe and secure place.
+There's a tennis and basketball court as well and they also provide rackets and balls if you want to play.
+without doubt, our best stay in Zimbabwe."</p>
+        <div class="review-author">
+          <h4>Sekhar</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 14 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Had an amazing stay at Lindy's. Very beautiful place with lots of activities. Mr and Mrs Mukhowa were great hosts felt right at home. All requests were attended to with no fuss.
+ Without loadshedding issues, solar power and generators were in place to continue having power.
+ The place is located in very quiet location with easy access to restaurants, Hillside dam and town.
+ Great experience all round."</p>
+        <div class="review-author">
+          <h4>Alfredo (England, United Kingdom)
+</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 15 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lindy was such a lovely host .. and her place felt like home."</p>
+        <div class="review-author">
+          <h4>Frankie Ndlovu (Cape Town, South Africa)</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 16 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The place was super-great, we enjoyed our stay, we wish we could have stayed longer! The kitchen, bathroom and bedding were clean, and the host were very friendly and responsive."</p>
+        <div class="review-author">
+          <h4>Gaksteter</h4>
+          <span>Tea Party Organizer</span>
+        </div>
+      </div>
+
+       <!-- Review Card 17 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Our hosts were very attentive tending to our every need. The residence is a hidden gem in a clean beautiful neighborhood. The grounds are an oasis of beauty with basketball, tennis, rice landscape for picnic or just sitting in the shade or sun. There is food and order local to the residence, just ask and your host will point you in the right direction. Would surely stay again."</p>
+        <div class="review-author">
+          <h4>Raymond (Pretoria, SA)</h4>
+          <span>Vacation stay</span>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Subtle hint for desktop users -->
+    <div class="carousel-hint">
+      <p><i class="fa-solid fa-left-right"></i> Swipe side-to-side or drag to view more reviews</p>
     </div>
 
-  </section>
+  </div>
+</section>
 
 
   <!-- Location Map Section -->
@@ -381,14 +592,7 @@
             <p>Hillside, Bulawayo, Zimbabwe</p>
           </div>
         </div>
-        
-        <div class="direction-item">
-          <div class="dir-icon"><i class="fa-solid fa-car"></i></div>
-          <div class="dir-text">
-            <h4>Accessibility</h4>
-            <p>Conveniently accessible via main suburban arteries with secure, gated parking on-site for all residents and private function guests.</p>
-          </div>
-        </div>
+      
 
         <div class="direction-item">
           <div class="dir-icon"><i class="fa-solid fa-clock"></i></div>
@@ -421,9 +625,6 @@
 </section>
 
 
-
-
-
   <!-- Interactive Action & Booking Forms Section -->
   <section class="section-padding" id="Booking-form">
     <div class="container grid-2">
@@ -439,7 +640,7 @@
 
       <div class="booking-box">
         <!-- Connecting Formspree layer dynamically -->
-        <form action="https://formspree.io/f/lindysplace08@gmail.com" method="POST">
+        <form action="https://formspree.io/f/mgobnqkz" method="POST">
           <div class="form-group">
             <label for="guest-name">Full Name</label>
             <input type="text" id="guest-name" name="name" placeholder="John Doe" required>
@@ -454,9 +655,10 @@
             <label for="booking-type">Inquiry Focus</label>
             <select id="booking-type" name="inquiry_type" required>
               <option value="" disabled selected>Select an option...</option>
-              <option value="accommodation">Villa Lodging/Accommodation</option>
+              <option value="accommodation">Stay Lodging/Accommodation</option>
               <option value="function">Small Function Space Hire</option>
               <option value="sports">Tennis / Basketball Court Access</option>
+              <option value="sports">Corporate Stay</option>
             </select>
           </div>
 
@@ -466,7 +668,7 @@
               placeholder="Let us know dates, estimated guest count, or catering requirements..." required></textarea>
           </div>
 
-          <button type="submit" class="btn-submit">Send Inquiry Portfolio</button>
+          <button type="submit" class="btn-submit">Send Inquiry</button>
         </form>
       </div>
     </div>
@@ -474,6 +676,7 @@
 
 
   </section>
+
   <!-- Top Contact Details Quick Strip -->
   <div class="info-strip">
     <span><i class="fa-solid fa-location-dot"></i> Hillside, Bulawayo</span>
