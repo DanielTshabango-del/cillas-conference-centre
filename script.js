@@ -101,3 +101,106 @@ closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) lightbox.style.display = 'none';
 });
+
+
+// function for Services section conference layout//
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.slider-track');
+    const slides = Array.from(document.querySelectorAll('.review-slide'));
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const dotsContainer = document.querySelector('.slider-dots');
+
+    let currentIndex = 0;
+    let cardsPerView = getCardsPerView();
+
+    // Determine viewport sizing dynamically matching CSS Media queries
+    function getCardsPerView() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
+    // Calculate maximum available index frame step ranges
+    function getMaxIndex() {
+        return Math.max(0, slides.length - cardsPerView);
+    }
+
+    // Generate responsive control pagination dot interfaces
+    function setupDots() {
+        dotsContainer.innerHTML = '';
+        const totalDots = getMaxIndex() + 1;
+        
+        // Hide navigation elements entirely if content fits without scrolling
+        if (totalDots <= 1) {
+            dotsContainer.style.display = 'none';
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            return;
+        } else {
+            dotsContainer.style.display = 'flex';
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        }
+
+        for (let i = 0; i < totalDots; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === currentIndex) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateSliderPosition();
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    // Execute translation transform calculations
+    function updateSliderPosition() {
+        const maxIdx = getMaxIndex();
+        if (currentIndex > maxIdx) currentIndex = maxIdx;
+        
+        const cardWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = translateX(-${currentIndex * cardWidth}px);
+        
+        // Update active classes across matching dots indexes
+        const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    // Event Bindings
+    nextBtn.addEventListener('click', () => {
+        const maxIdx = getMaxIndex();
+        if (currentIndex < maxIdx) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Seamless loop fallback back to structural array index origin
+        }
+        updateSliderPosition();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = getMaxIndex(); // Loop jump back down toward the tail-end limit indices
+        }
+        updateSliderPosition();
+    });
+
+    // Handle viewport resize recalculations cleanly
+    window.addEventListener('resize', () => {
+        const newCardsPerView = getCardsPerView();
+        if (newCardsPerView !== cardsPerView) {
+            cardsPerView = newCardsPerView;
+            setupDots();
+            updateSliderPosition();
+        }
+    });
+
+    // Run structural initialization layer definitions 
+    setupDots();
+    updateSliderPosition();
+});
